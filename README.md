@@ -8,9 +8,11 @@ Custom bootloader project for Cortex-M4 based STM32F407VG microcontroller on STM
    section 28.1.1 - STM32F40xxx/41xxx devices -> Bootloader configuration
 3. UM1472 - Discovery kit with STM32F407VG MCU  
    section 6.1.3 - ST-LINK/V2-A VCP configuration
-4. DS8626 - Datasheet STM32F405xx STM32F407xx
+4. DS8626 - Datasheet STM32F405xx STM32F407xx  
    section 3 - Pinouts
-6. Schematic - en.MB997-F407VGT6-E01_Schematic   
+5. Schematic - en.MB997-F407VGT6-E01_Schematic
+   BOOT0 and BOOT1/PB2 pins
+   
 
 
 ## Hardware
