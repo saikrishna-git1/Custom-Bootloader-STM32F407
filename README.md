@@ -24,4 +24,8 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 
 
 
-## Exploring STM32 Native bootloader
+## Exploring STM32 Native bootloader present in the system memory
+See the docs
+1. Short BOOT1/PB2 and GND
+2. Short BOOT0 and VDD
+
