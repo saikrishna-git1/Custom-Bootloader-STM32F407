@@ -29,8 +29,8 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ### To boot from system memory and communicate to PC via USART3 peripheral
 1. Short BOOT1/PB2 and GND
 2. Short BOOT0 and VDD
-4. Connect PC10 (USART3_TX) to RX of serial converter
-5. Connect PC11 (USART3_RX) to TX of serial converter
+4. Connect PC10 (USART3_TX) to RX on serial converter
+5. Connect PC11 (USART3_RX) to TX on serial converter
 6. Connect GND to GND of serial converter
 
    
