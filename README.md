@@ -1,4 +1,4 @@
-# Custom-Bootloader-STM32F407G-DISC1
+# Custom-Bootloader-STM32F407
 Custom bootloader project for Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board.
 
 ## Docs to refer
