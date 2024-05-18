@@ -2,7 +2,7 @@
 Custom bootloader project for Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board.
 
 ## Docs to refer
-1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs
+1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs  
    section 2.4 - Boot configuration
 2. AN2606 - STM32 microcontroller system memory boot mode
    section 28.1.1 - STM32F40xxx/41xxx devices -> Bootloader configuration
