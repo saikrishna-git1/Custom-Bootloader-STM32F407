@@ -2,8 +2,15 @@
 Custom bootloader project for Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board.
 
 ## Docs to refer
-1. AN2606 - STM32 microcontroller system memory boot mode : section 28.1.1 STM32F40xxx/41xxx devices -> Bootloader configuration
-2. UM1472 - Discovery kit with STM32F407VG MCU : section 
+1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs
+   section 2.4 - Boot configuration
+2. AN2606 - STM32 microcontroller system memory boot mode
+   section 28.1.1 - STM32F40xxx/41xxx devices -> Bootloader configuration
+2. UM1472 - Discovery kit with STM32F407VG MCU
+   section 6.1.3 - ST-LINK/V2-A VCP configuration
+4. DS8626 - Datasheet STM32F405xx STM32F407xx
+5. Schematic en.MB997   
+
 
 ## Hardware
 1. STM32F407G-DISC1 board
