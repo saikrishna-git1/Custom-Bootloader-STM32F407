@@ -18,7 +18,7 @@ Custom bootloader project for Cortex-M4 based STM32F407VG microcontroller on STM
 ## Hardware and Software
 1. STM32F407G-DISC1 board
 2. USB to UART converter - 2 nos (extra optional ??)
-   
+.   
 1. STM32CubeIDE
 2. STM32CubeProgrammer / Flash Loader Demo appln
 
