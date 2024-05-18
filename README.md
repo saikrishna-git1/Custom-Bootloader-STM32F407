@@ -32,7 +32,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 3. Set serial converter voltage to 3.3V using jumper (??)
 4. Connect PC10 (USART3_TX) to RX on serial converter
 5. Connect PC11 (USART3_RX) to TX on serial converter
-6. Connect GND to GND of serial converter
+6. Connect GND to GND on serial converter
 
 ### Flash Loader Demo application
 1. Select the COM port for serial converter (not STM board) and click Next - Reset the board and try again if it doesn't work
