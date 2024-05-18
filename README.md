@@ -18,7 +18,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 
 ## Hardware and Software
 1. STM32F407G-DISC1 board
-2. USB to UART converter - 2 nos (extra optional ??)
+2. FTDI USB2UART serial converter - 2 nos (extra optional ??)
  
 1. STM32CubeIDE
 2. STM32CubeProgrammer / Flash Loader Demo appln
@@ -26,7 +26,11 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 
 
 ## Exploring STM32 Native bootloader present in the system memory
-See the docs
 1. Short BOOT1/PB2 and GND
 2. Short BOOT0 and VDD
+3. Connect PC10 (USART3_TX) to RX of serial converter
+4. Connect PC11 (USART3_RX) to TX of serial converter
+5. Connect GND to GND of serial converter
+
+   
 
