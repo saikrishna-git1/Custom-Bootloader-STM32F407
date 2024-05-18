@@ -18,10 +18,10 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 
 ## Hardware and Software
 1. STM32F407G-DISC1 board
-2. FTDI USB2UART serial converter - 2 nos (extra optional ??)
+2. FTDI serial (USB2UART) converter - 2 nos (extra optional ??)
  
 1. STM32CubeIDE
-2. STM32CubeProgrammer / Flash Loader Demo appln
+2. Flash Loader Demo application / STM32CubeProgrammer
 
 
 
@@ -29,9 +29,13 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ### To boot from system memory and communicate to PC via USART3 peripheral
 1. Short BOOT1/PB2 and GND
 2. Short BOOT0 and VDD
+3. Set serial converter voltage to 3.3V using jumper (??)
 4. Connect PC10 (USART3_TX) to RX on serial converter
 5. Connect PC11 (USART3_RX) to TX on serial converter
 6. Connect GND to GND of serial converter
 
-   
+### Flash Loader Demo application
+1. Select the COM port for serial converter (not STM board) and click Next - Reset the board and try again if it doesn't work
+2. Click Next if target is readable and see the target info
+
 
