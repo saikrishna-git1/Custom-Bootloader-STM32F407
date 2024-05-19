@@ -67,7 +67,7 @@ User application(s) will be placed in Sectors-2 to 11. Hence, base address of us
 
 
 ## Host - Bootloader communication
-![image](https://github.com/saikrishna-git1/Custom-Bootloader-STM32F407/assets/29352891/52f74b02-c801-443d-9886-791adf7c4722)
+![image](https://github.com/saikrishna-git1/Custom-Bootloader-STM32F407/assets/29352891/52f74b02-c801-443d-9886-791adf7c4722)  
 Once bootloader recieves the command packet, it first does CRC32 to ensure data integrity. It then decodes the command. If CRC is correct it sends an ACK + how many bytes bootloader is going to send in its next reply, to the command else it sends a NACK.  
 It then excutes th command and sends its reply back to the Host.
 
