@@ -50,8 +50,11 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 
 
 
-## Bootloader code placement
-
+## Bootloader code placement in Flash memory
+System memory (ROM) - 30KB - ST Native bootloader is already present. Can't erase/modify it.  
+Custom bootloader will be placed in main memory of the Flash memory in Sectors-0,1 (16KB each sector). Hence, base address of custom bootloader = 0x0800 0000. 
+User application(s) will be placed in Sectors-2 to 11. Hence, base address of user application = 0x0800 8000.
+rr
 
 
 
