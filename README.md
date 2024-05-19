@@ -37,5 +37,14 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ### Flash Loader Demo application
 1. Select the COM port for serial converter (not STM board) and click Next - Reset the board and try again if it doesn't work
 2. Click Next if target is readable and see the target info
+3. Click next if you want the bootloader to flash any .hex file into Flash memory and execute it.
 
+
+
+## Custom bootloader communication with Host
+2 USART peripherals are used to communicate with the Host:
+1. Virtual COM port - to connect to Host to receive commands and send ACK/NACK.
+   The ST-LINK/V2-A supports a Virtual COM port (VCP) on U2 pin 12 (ST-LINK_TX) and U2 pin 13 (ST-LINK_RX) but these pins are not connected to the USART of the STM32F407 microcontroller. To connect an STM32F407 USART to the VCP on the PC, use USART to USB dongle from the market connected for instance to STM32F407 USART2 available on connector P1 pin 14 (PA2: USART2_TX) and P1 pin 13 (PA3: USART2_RX).
+   USART2 is not used to communicate with the system bootloader anyways.  
+2. Debug port - to print debug messages from bootloader code.
 
