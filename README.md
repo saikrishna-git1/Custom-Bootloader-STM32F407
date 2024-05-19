@@ -44,9 +44,15 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ## Custom bootloader communication with Host
 2 USART peripherals are used to communicate with the Host:
 1. Virtual COM port - to connect to Host to receive commands and send ACK/NACK.
-   The ST-LINK/V2-A supports a Virtual COM port (VCP) on U2 pin 12 (ST-LINK_TX) and U2 pin 13 (ST-LINK_RX) but these pins are not connected to the USART of the STM32F407 microcontroller (but on other boards, it is connected to USART peripheral of microcontroller). To connect an STM32F407 USART to the VCP on the PC, use USART to USB dongle from the market connected for instance to STM32F407 USART2 available on connector P1 pin 14 (PA2: USART2_TX) and P1 pin 13 (PA3: USART2_RX).  
+   The ST-LINK/V2-A supports a Virtual COM port (VCP) on U2 pin 12 (ST-LINK_TX) and U2 pin 13 (ST-LINK_RX) but these pins are not connected to the USART of the STM32F407 microcontroller on STM32F407G-DISC1 board (but on other boards, it is connected to USART peripheral of microcontroller). To connect an STM32F407 USART to the VCP on the PC, use USART to USB dongle from the market connected for instance to STM32F407 USART2 available on connector P1 pin 14 (PA2: USART2_TX) and P1 pin 13 (PA3: USART2_RX).  
    USART2 is not used to communicate with the system bootloader anyways.  
 2. Debug port - to print debug messages from bootloader code. This is optional. Alternatively, you can blink LED from code to indicate success/failure of operations.
+
+
+
+## Bootloader code placement
+
+
 
 
 
