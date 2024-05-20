@@ -1,5 +1,5 @@
 # Custom-Bootloader-STM32F407
-Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board.
+Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board. 2 separate projects - custom_bootloader and user_application are compiled separately. And combined into a single image ??
 
 ## Docs to refer
 1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs  
