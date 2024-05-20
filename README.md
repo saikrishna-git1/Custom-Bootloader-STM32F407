@@ -93,7 +93,9 @@ Used CubeMX software to add all the peripheral drivers needed for this task:
 USART2 - PA2, PA3  
 USART3 - PC10, PC11  
 CRC  
-This code has to be placed at address 0x0800 0000 (default address). This project should not compile if the size of the executable exceeds 32KB (2 sectors of Flash memory). Hence, put this value in the linker script of this project. (You don't actually see any errors during compile if you are not using the variables created in the flash anywhere in your code which are occupying more than allocated space in the linker script, check the .map file -> 'Discarded input sections' to see if 'rodata.var' is present).
+This code has to be placed at address 0x0800 0000 (default address). This project should not compile if the size of the executable exceeds 32KB (2 sectors of Flash memory). Hence, put this value in the linker script of this project. (You don't actually see any errors like:  custom_bootloader_001.elf section `.rodata' will not fit in region `FLASH'  
+region `FLASH' overflowed by 12268 bytes  
+during compile if you are not using the variables created in the flash anywhere in your code which are occupying more than allocated space in the linker script, check the .map file -> 'Discarded input sections' to see if 'rodata.var' is present).
 
 
 ## User_application project creation
