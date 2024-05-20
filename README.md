@@ -74,7 +74,11 @@ It then excutes th command and sends its reply back to the Host.
 
 
 ## Bootloader project creation
-Used CubeMX software to add/init all the peripheral drivers needed for this task.
+Used CubeMX software to add/init all the peripheral drivers needed for this task:  
+USART2 - PA2, PA3  
+USART3 - PC10, PC11  
+CRC  
+
 
 
 
