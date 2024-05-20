@@ -14,7 +14,9 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 6. Schematic - en.MB997-F407VGT6-E01_Schematic  
    BOOT0, BOOT1/PB2 pins
    
-
+## Useful links
+1. https://community.renesas.com/mcu-mpu/rx/f/rx-forum/6853/memory-management-for-bootloader-and-application
+2. 
 
 ## Hardware and Software
 1. STM32F407G-DISC1 board
