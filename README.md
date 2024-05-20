@@ -4,7 +4,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ## Custom bootloader features
 ### Features present
 1. If user button is pressed at the time of reset, bootloader will wait for commands to be received via USART2 (PA2: USART2_TX, PA3: USART2_RX) peripheral.
-2. Does a CRC check of the commands and proceeds to execute them only if CRC pass. (see bootloader commands)
+2. Does a CRC check of the commands and proceeds to execute them only if CRC is a pass. (see bootloader commands)
 3. 
 
 ### To be added :)
