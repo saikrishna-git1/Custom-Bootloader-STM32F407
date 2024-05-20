@@ -1,6 +1,17 @@
 # Custom-Bootloader-STM32F407
 Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board. 2 separate projects - custom_bootloader and user_application are compiled separately. And combined into a single image ??
 
+## Custom bootloader features
+### Features present
+1. If user button is pressed at the time of reset, bootloader will wait for commands to be received via USART2 (PA2: USART2_TX, PA3: USART2_RX) peripheral.
+2. Does a CRC check of the commands and proceeds to execute them only if CRC pass. (see bootloader commands)
+3. 
+
+### To be added :)
+1. To update the user application (firmware) using custom bootloader.
+2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
+3. Implement custom protocol.
+
 ## Docs to refer
 1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs  
    section 2.4 - Boot configuration  
@@ -82,20 +93,15 @@ Used CubeMX software to add all the peripheral drivers needed for this task:
 USART2 - PA2, PA3  
 USART3 - PC10, PC11  
 CRC  
-This code has to be placed at address 0x0800 0000 (default address).
+This code has to be placed at address 0x0800 0000 (default address). This project should not compile if the size of the executable exceeds 32KB (2 sectors of Flash memory). Hence, put this value in the linker script of this project.s
 
 
-## Create another project for user application
+## User_application project creation
 This user application just toggles LED - LD3 (PD13). This code has to be placed at address 0x0800 8000. Change this value in linker script. Can verify it by erasing the entire Flash and then programming it and using 'Memory browser' window to view the contents of Flash.  
 
 
 
 
-
-## To be done
-1. To update the user application (firmware) using custom bootloader.
-2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
-3. Implement X/Y modem protocol.
 
 
 
