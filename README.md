@@ -1,5 +1,5 @@
 # Custom-Bootloader-STM32F407
-Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board. 2 separate projects - custom_bootloader and user_application are compiled separately. And combined into a single image ??
+Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on STM32F407G-DISC1 board. 2 separate projects - custom_bootloader and user_application are compiled separately. 
 
 ## Custom bootloader features
 ### Features present
@@ -11,7 +11,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 1. To update the user application (firmware) using the custom bootloader after CRC.
 2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
 3. Implement custom protocol.
-4. Pad the bootloader executable to the max size so that it is always 32KB (maybe using a python script).
+4. Instead of having 2 separate projects for bootloader and application, the more convenient thing to do is to build a single binary which contains both programs and pad the bootloader executable to the max size so that it is always 32KB (maybe using a python script).
 
 ## Docs to refer
 1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs  
