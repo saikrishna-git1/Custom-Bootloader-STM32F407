@@ -97,7 +97,7 @@ This code has to be placed at address 0x0800 0000 (default address). This projec
 
 
 ## User_application project creation
-This user application just toggles LED - LD3 (PD13). This code has to be placed at address 0x0800 8000. Change this value in linker script. This project should not compile if the size of the executable exceeds 32KB (2 sectors of Flash memory). Hence, put this value in the linker script of this project.  
+This user application just toggles LED - LD3 (PD13). This code has to be placed at address 0x0800 8000. Change this value in linker script. This project should not compile if the size of the executable exceeds (1024-32) = 992KB (remaining sectors of Flash memory). Hence, put this value in the linker script of this project.  
 Can verify it by erasing the entire Flash and then programming it and using 'Memory browser' window to view the contents of Flash.  
 
 
