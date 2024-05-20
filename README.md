@@ -31,6 +31,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 2. https://medium.com/@muzi.xu88/story-about-bootloader-and-iap-458b1f8dcebd
 3. https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch#deciding-on-a-memory-map
 4. Worlds Simplest Bootloader - https://www.youtube.com/watch?v=cfNJ85cX-ms&list=PLP29wDx6QmW7HaCrRydOnxcy8QmW0SNdQ&index=5
+5. https://www.udemy.com/course/stm32f4-arm-cortex-mx-custom-bootloader-development/
 
 ## Hardware and Software
 1. STM32F407G-DISC1 board
@@ -96,7 +97,7 @@ USART3 - PC10, PC11
 CRC  
 This code has to be placed at address 0x0800 0000 (default address). This project should not compile if the size of the executable exceeds 32KB (2 sectors of Flash memory). Hence, put this value in the linker script of this project. (You don't actually see any errors like:  custom_bootloader_001.elf section `.rodata' will not fit in region `FLASH'  
 region `FLASH' overflowed by 12268 bytes  
-during compile if you are not using the variables created in the flash anywhere in your code which are occupying more than allocated space in the linker script, check the .map file -> 'Discarded input sections' to see if 'rodata.var' is present. You can also use the keyword KEEP in the linker script for a particular section so that it doesn't get discarded).
+during compile if you are not using the variables created in the flash anywhere in your code which are occupying more than allocated space in the linker script, check the .map file -> 'Discarded input sections' to see if 'rodata.var' is present. If you don't want a section to be discarded, use the keyword KEEP in the linker script for that particular section).
 
 
 ## User_application project creation
