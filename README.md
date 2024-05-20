@@ -91,8 +91,9 @@ This user application just toggles LED - LD3 (PD13). This code has to be placed 
 
 
 ## To be done
-1. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
-2. Implement X/Y modem protocol
+1. To update the user application (firmware) using custom bootloader.
+2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
+3. Implement X/Y modem protocol.
 
 
 
