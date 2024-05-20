@@ -107,7 +107,9 @@ Can verify it by erasing the entire Flash and then programming it and using 'Mem
 
 
 
-
+## To explore
+1. bewitched - commandline hex editor to view .bin files in hex format
+2. 
 
 
 
