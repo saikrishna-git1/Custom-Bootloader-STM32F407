@@ -78,9 +78,14 @@ Used CubeMX software to add all the peripheral drivers needed for this task:
 USART2 - PA2, PA3  
 USART3 - PC10, PC11  
 CRC  
+This code has to be placed at address 0x0800 0000 (default address).
+
 
 ## Create another project for user application
-This user application just toggles LED - LD3 (PD13). This code has to be placed at address 0x0800 8000. Change this value in linker script.
+This user application just toggles LED - LD3 (PD13). This code has to be placed at address 0x0800 8000. Change this value in linker script. Can verify it by erasing the entire Flash and then programming it and using 'Memory browser' window to view the contents of Flash.  
+
+
+
 
 
 
