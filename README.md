@@ -10,7 +10,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ### To be added :)
 1. To update the user application (firmware) using the custom bootloader after CRC.
 2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
-3. Implement custom protocol.
+3. Implement custom packet protocol.
 4. Instead of having 2 separate projects for bootloader and application, the more convenient thing to do is to build a single binary which contains both programs and pad the bootloader executable to the max size so that it is always 32KB (maybe using a python script).
 
 ## Docs to refer
