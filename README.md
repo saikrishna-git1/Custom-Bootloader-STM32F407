@@ -8,7 +8,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 3. 
 
 ### To be added :)
-1. To update the user application (firmware) using custom bootloader.
+1. To update the user application (firmware) using the custom bootloader.
 2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
 3. Implement custom protocol.
 
