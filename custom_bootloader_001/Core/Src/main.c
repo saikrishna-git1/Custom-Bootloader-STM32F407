@@ -162,7 +162,7 @@ void bootloader_jump_to_user_app(void) {
 	//fn_ptr to hold the address of the user_application's reset_handler
 	void (*fn_ptr_void_void) (void) = NULL;
 
-#if 1 //is this really needed ?? Working without this too. Taken care by the reset_handler of user_application
+#if 0 //is this really needed ?? Working without this. Taken care by the reset_handler of user_application
 	//configure MSP by reading the first word of the user_application region in Flash memory
 	uint32_t msp_value = *( (volatile uint32_t *) FLASH_SECTOR2_BASE_ADDRESS );
 	printmsg("[BL_DBG]: MSP value = 0x%x\n", msp_value);
