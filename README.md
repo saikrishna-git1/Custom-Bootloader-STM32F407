@@ -31,7 +31,7 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 2. https://medium.com/@muzi.xu88/story-about-bootloader-and-iap-458b1f8dcebd
 3. https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch#deciding-on-a-memory-map
 4. Worlds Simplest Bootloader - https://www.youtube.com/watch?v=cfNJ85cX-ms&list=PLP29wDx6QmW7HaCrRydOnxcy8QmW0SNdQ&index=5
-5. https://www.udemy.com/course/stm32f4-arm-cortex-mx-custom-bootloader-development/
+5. Udemy - Fastbit course - https://www.udemy.com/course/stm32f4-arm-cortex-mx-custom-bootloader-development/
 
 ## Hardware and Software
 1. STM32F407G-DISC1 board
