@@ -5,13 +5,11 @@ Custom bootloader project for ARM Cortex-M4 based STM32F407VG microcontroller on
 ### Features present
 1. If user button is pressed at the time of reset, bootloader will wait for commands to be received via USART2 (PA2: USART2_TX, PA3: USART2_RX) peripheral. Else, it directly jumps to user application.
 2. Does a CRC check of the commands and proceeds to execute them only if CRC is a pass. (see bootloader commands)
-3. 
+3. Updates the user application (firmware) using the custom bootloader after CRC.
 
-### To be added :)
-1. To update the user application (firmware) using the custom bootloader after CRC.
-2. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
-3. Implement custom packet protocol.
-4. Instead of having 2 separate projects for bootloader and application, the more convenient thing to do is to build a single binary which contains both programs and pad the bootloader executable to the max size so that it is always 32KB (maybe using a python script).
+### To be added :) 
+1. Implement a mechanism to preserve variables of bootloader so that they can be used in user application and vice-versa.
+2. Instead of having 2 separate projects for bootloader and application, the more convenient thing to do is to build a single binary which contains both programs and pad the bootloader executable to the max size so that it is always 32KB (maybe using a python script).
 
 ## Docs to refer
 1. RM0090 - Reference manual STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm®-based 32-bit MCUs  
